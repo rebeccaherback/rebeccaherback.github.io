@@ -6,9 +6,10 @@ header {
     background-color: black; 
     color: white;
     padding: 2rem;
+    text-align:right;
 }
 main {
-    border: 3px red solid;
+    border: 0px red solid;
 }
 article {
     background-color: white;
@@ -26,4 +27,51 @@ footer {
 }
 h1 {
     text-align: center;
+}
+/* Link styling */
+
+    a:link {
+        color: red;
+        text-decoration: none;
+    }
+    a:visited {
+        color: blueviolet;
+    }
+    a:hover {
+        color:aqua;
+        text-decoration: underline;
+    }
+    a:active {
+        color:green;
+    }
+/* Link styling - header */
+header a:link {
+    color: white;
+    text-decoration: none;
+}
+header a:visited {
+    color: white;
+    text-decoration: none;
+}
+header a:hover {
+    color:cornflowerblue;
+    text-decoration: underline;
+}
+header a:hover {
+    color:darkmagenta;
+    text-decoration: underline;
+}
+h2.logo {
+    background-color:purple; 
+    text-align:center;
+    width:6rem;
+    height:6rem;
+    display: grid;
+    align-items: center;
+    border-radius: 50%;
+}
+.wrapper {
+    border: 0px black solid; 
+    margin: 0 auto;
+    max-width: 40rem;
 }
