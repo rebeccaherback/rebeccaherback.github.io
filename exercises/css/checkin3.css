@@ -1,0 +1,111 @@
+#wrapper {
+    background-color: rgb(255, 255, 255);
+    display:grid;
+    color: black;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    max-width: 100%;
+    min-height: 100vh;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#welcome {
+    display: grid;
+    background-color: rgb(175, 114, 175);
+    color: black;
+    grid-column: 1/4;
+    width: 100%; 
+}
+#content {
+    display: grid;
+    background-color: pink;
+    color: black;
+    grid-column: 1/4;
+    width: 100%;
+}
+#intro {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#collieimage {
+    display: grid;
+    width: 100%;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+#aboutcollies {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+#collieimage2 {
+    display: grid;
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+#rightfit {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+header {
+    background-color: pink;
+    grid-column: 1/4; 
+    padding: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+#header > p {
+    font-size: 1.25rem;
+}
+div.dog {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    display: grid;
+    width: 100%;
+    text-align: center;
+}
+img {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+}
+#layout {
+    max-width: 100%;
+    grid-template-rows: 1 fr;
+    grid-template-columns: 1fr 1fr;
+}
+#layout > * {
+    min-width: 0;
+}
+p {
+    padding: 0.5rem;
+    border: 0.1rem;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+@media (max-width: 1000px) {
+    #layout {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    #layout > * {
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
+@media (max-width: 500px) {
+    #layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    #layout > * {
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
