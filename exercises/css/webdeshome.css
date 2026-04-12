@@ -1,0 +1,89 @@
+#wrapper {
+    background-color: #7EA1C4;
+    color: #1B365C;
+    display: grid;
+    max-width: 100%;
+    min-height: 100vh;
+}
+#backgroundinfo {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    padding: 12px;
+    border: 20px;
+}
+#homepics {
+    display: grid;
+    grid-row: 3 / 4;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#header {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+#map {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+#texas {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+#boston {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: darkblue;
+    padding: 25px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+nav li {
+    list-style-type: none;
+    background-color: darkblue;
+    margin: 1rem;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+}
+nav a:hover {
+    color: goldenrod;
+    background-color: darkblue;
+}
+h1 {
+    text-align: center;
+    padding: 12px;
+}
+@media (max-width: 1000px) {
+    #wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    #wrapper > * {
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
+@media (max-width: 500px) {
+    #wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    #wrapper > * {
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
