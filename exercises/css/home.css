@@ -1,0 +1,120 @@
+/*HOME PAGE START CSS*/
+body {
+    background-color: #1B365C;
+    color: white;
+    margin: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #7EA1C4;
+    color: white;
+    text-decoration: none;
+}
+nav li {
+    list-style-type: none;
+    background-color: #7EA1C4;
+    margin: 1rem;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+}
+nav a:hover {
+    color: gold;
+    background-color: #7EA1C4;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #7EA1C4;
+    padding: 25px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+h1.logo {
+    text-decoration: none;
+    color: gold;
+    text-align: center;
+}
+h1 a {
+    text-decoration: none;
+    color: #1B365C;
+    background-color: gold;
+    width: 9rem;
+    height: 6rem;
+    padding: 2rem;
+    border-radius: 50%
+}
+h1.logo:hover {
+    color: #7EA1C4;
+    background-color: white; 
+}
+footer {
+    text-align: center;
+    background-color: gold;
+    color: #1B365C;
+    padding: 1rem;
+}
+html, body {
+    height: 100%;
+    margin: 1rem;
+}
+main {
+    flex: 1;
+    margin: 0;
+    border: 0;
+}
+.bg {
+    width: 100%;
+    height: 400px;
+    background-image: url(../../images/backgroundimg.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 45% 30%;
+    margin: 20px 0;
+}
+article {
+    background-color: #7EA1C4;
+    padding: 1.3rem;
+    border: 1px solid white;
+    margin: .5rem;
+    margin-bottom: 1.5rem;
+    border-radius: .8rem;
+}
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about-text {
+    width: 60%
+}
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.about-img {
+    width: 250px;
+    height: auto;
+    border: .8rem solid white;
+}
+h2 {
+    font-size: 32px;
+}
+/* HOME PAGE END CSS */
+/* EXPERIENCE PAGE START CSS */
+.sb {
+    width: 100%;
+    height: 400px;
+    background-image: url(../../images/skills.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+    margin: 20px 0;
+}
