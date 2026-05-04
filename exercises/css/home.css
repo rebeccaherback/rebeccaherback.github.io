@@ -2,7 +2,7 @@
 body {
     background-color: #1B365C;
     color: white;
-    margin: 1rem;
+    margin: 1.5rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,11 +11,13 @@ header {
     background-color: #7EA1C4;
     color: white;
     text-decoration: none;
+    border-radius: .8rem;
 }
 nav li {
     list-style-type: none;
     background-color: #7EA1C4;
     margin: 1rem;
+    border-radius: .8rem;
 }
 nav a {
     text-decoration: none;
@@ -25,39 +27,37 @@ nav a {
 }
 nav a:hover {
     color: gold;
-    background-color: #7EA1C4;
 }
 nav ul {
     display: flex;
     justify-content: center;
-    background-color: #7EA1C4;
     padding: 25px;
     margin: 0;
     flex-wrap: wrap;
 }
 h1.logo {
     text-decoration: none;
-    color: gold;
     text-align: center;
 }
 h1 a {
     text-decoration: none;
     color: #1B365C;
-    background-color: gold;
+    background-color: rgb(255, 211, 81);
     width: 9rem;
     height: 6rem;
     padding: 2rem;
     border-radius: 50%
 }
-h1.logo:hover {
-    color: #7EA1C4;
+h1 a:hover {
+    color: #1B365C;
     background-color: white; 
 }
 footer {
     text-align: center;
-    background-color: gold;
+    background-color: rgb(255, 211, 81);
     color: #1B365C;
     padding: 1rem;
+    border-radius: .8rem;
 }
 html, body {
     height: 100%;
@@ -77,6 +77,7 @@ main {
     background-attachment: fixed;
     background-position: 45% 30%;
     margin: 20px 0;
+    border-radius: .8rem;
 }
 article {
     background-color: #7EA1C4;
@@ -108,13 +109,69 @@ h2 {
 }
 /* HOME PAGE END CSS */
 /* EXPERIENCE PAGE START CSS */
-.sb {
-    width: 100%;
-    height: 400px;
-    background-image: url(../../images/skills.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: 50% 50%;
-    margin: 20px 0;
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+.skills img {
+    max-height: 120px;
+    object-fit: contain;
+    border-radius: 3rem;
+}
+/* PORTFOLIO PAGE CSS */
+.portfolio a:link {
+    color: #1B365C;
+    text-decoration: none; 
+}
+.portfolio a:visited {
+    color: rgb(255, 211, 81); 
+}
+.portfolio a:hover {
+    color: black;
+    text-decoration: underline; 
+}
+.portfolio a:active {
+    color: rgb(2, 61, 61); 
+}
+.portfolio {
+    font-size: 18px;
+}
+/*CONTACT PAGE CSS */
+.contactall {
+    display: grid; 
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+.contact a:link {
+    color: rgb(255, 211, 81);
+    text-decoration: none; 
+}
+.contact a:visited {
+    color: #1B365C; 
+}
+.contact a:hover {
+    color: black;
+    text-decoration: underline; 
+}
+.contact a:active {
+    color: rgb(2, 61, 61); 
+}
+.contact {
+    display: grid;
+    font-size: 20px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.contactimg {
+    display: grid;
+    max-height: auto;
+    object-fit: cover;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 1rem;
+}
+.contacthead {
+    grid-row: 1 / 2;
 }
