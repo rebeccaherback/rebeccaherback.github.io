@@ -13,27 +13,40 @@ header {
     text-decoration: none;
     border-radius: .8rem;
 }
-nav li {
-    list-style-type: none;
+.navbar {
+    width: fit-content;
     background-color: #7EA1C4;
-    margin: 1rem;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    transition: transform 0.2s, border-radius 0.2s;
+}
+nav li {
+    background-color: #7EA1C4;
     border-radius: .8rem;
 }
 nav a {
     text-decoration: none;
     color: white;
-    padding: 25px;
+    padding: 15px 25px;
     font-size: 20px;
+    display: block;
 }
 nav a:hover {
     color: gold;
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color: #1B365C;
 }
 nav ul {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding: 25px;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
     margin: 0;
-    flex-wrap: wrap;
+    list-style-type: none;
 }
 h1.logo {
     text-decoration: none;
@@ -113,12 +126,21 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
-    padding: 10px;
+    padding: 5px;
+    justify-items: center;
 }
 .skills img {
-    max-height: 120px;
+    max-height: 180px;
+    width: 100%;
+    padding: 20px;
     object-fit: contain;
-    border-radius: 3rem;
+    border-radius: 2rem;
+    display: block;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 /* PORTFOLIO PAGE CSS */
 .portfolio a:link {
