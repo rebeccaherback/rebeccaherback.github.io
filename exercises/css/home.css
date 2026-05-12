@@ -144,8 +144,8 @@ h2 {
 }
 /* PORTFOLIO PAGE CSS */
 .portfolio a:link {
-    color: #1B365C;
-    text-decoration: none; 
+    color: white;
+    text-decoration: underline; 
 }
 .portfolio a:visited {
     color: rgb(255, 211, 81); 
@@ -155,7 +155,7 @@ h2 {
     text-decoration: underline; 
 }
 .portfolio a:active {
-    color: rgb(2, 61, 61); 
+    color: white; 
 }
 .portfolio {
     font-size: 18px;
@@ -167,11 +167,11 @@ h2 {
     grid-template-rows: auto auto;
 }
 .contact a:link {
-    color: rgb(255, 211, 81);
-    text-decoration: none; 
+    color: white;
+    text-decoration: underline; 
 }
 .contact a:visited {
-    color: #1B365C; 
+    color: rgb(255, 211, 81); 
 }
 .contact a:hover {
     color: black;
