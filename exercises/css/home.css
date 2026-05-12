@@ -8,21 +8,21 @@ body {
     flex-direction: column;
 }
 header {
-    background-color: #7EA1C4;
+    background-color: #4D7AA8;
     color: white;
     text-decoration: none;
     border-radius: .8rem;
 }
 .navbar {
     width: fit-content;
-    background-color: #7EA1C4;
+    background-color: #4D7AA8;
     border-radius: 20px;
     margin: 20px auto;
     padding: 15px;
     transition: transform 0.2s, border-radius 0.2s;
 }
 nav li {
-    background-color: #7EA1C4;
+    background-color: #4D7AA8;
     border-radius: .8rem;
 }
 nav a {
@@ -93,7 +93,7 @@ main {
     border-radius: .8rem;
 }
 article {
-    background-color: #7EA1C4;
+    background-color: #4D7AA8;
     padding: 1.3rem;
     border: 1px solid white;
     margin: .5rem;
@@ -188,7 +188,7 @@ h2 {
 }
 .contactimg {
     display: grid;
-    max-height: auto;
+    height: auto;
     object-fit: cover;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
